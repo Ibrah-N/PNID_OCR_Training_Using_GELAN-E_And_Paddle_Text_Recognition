@@ -31,16 +31,17 @@ It is designed to handle **large-scale images**, apply **custom augmentations**,
 - Optional augmentations (color distortion, Gaussian blur, noise).  
 
 ### 3. Object Detection Model Training (YOLOv9)  
+'''
 - Dataset format:  
-detection_dataset/
-├── train/
-│ ├── images/
-│ └── labels/
-├── val/
-│ ├── images/
-│ └── labels/
-└── data.yaml
-
+    detection_dataset/
+    ├── train/
+    │ ├── images/
+    │ └── labels/
+    ├── val/
+    │ ├── images/
+    │ └── labels/
+    └── data.yaml
+'''
 
 - Training parameters:  
 - Batch size: **1**  
