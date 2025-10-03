@@ -31,6 +31,7 @@ It is designed to handle **large-scale images**, apply **custom augmentations**,
 - Optional augmentations (color distortion, Gaussian blur, noise).  
 
 ### 3. Object Detection Model Training (YOLOv9)  
+<pre>
 '''
 - Dataset format:  
     detection_dataset/
@@ -42,6 +43,7 @@ It is designed to handle **large-scale images**, apply **custom augmentations**,
     │ └── labels/
     └── data.yaml
 '''
+</pre>
 
 - Training parameters:  
 - Batch size: **1**  
@@ -50,14 +52,15 @@ It is designed to handle **large-scale images**, apply **custom augmentations**,
 
 ### 4. 🔹 Text Recognition Model Training (PaddleOCR)  
 - Dataset format:  
-
-
+<pre>
+'''
 recognition_dataset/
 ├── train_images/
 ├── valid_images/
 ├── train.txt
 └── valid.txt
-
+'''
+</pre>
 
 - `train.txt` example:  
 
@@ -65,7 +68,6 @@ train_images/img_1.jpg Hello
 train_images/img_2.jpg World
 
 - Custom YAML config for PaddleOCR to define architecture, optimizer, and dataset paths.  
-
 ---
 
 ## 📂 Label Formats  
