@@ -64,28 +64,27 @@ recognition_dataset/
 
 - `train.txt` example:  
 
-train_images/img_1.jpg Hello
-train_images/img_2.jpg World
+    - train_images/img_1.jpg Hello
+    - train_images/img_2.jpg World
 
 - Custom YAML config for PaddleOCR to define architecture, optimizer, and dataset paths.  
 ---
 
-## 📂 Label Formats  
+## Label Formats  
 
 **Detection (YOLO format):**  
 class_id x_center y_center width height
 - Normalized values between 0 and 1.  
 
 **Recognition (PaddleOCR format):**  
-
-
+- txt format for initial labels like:
+    - "img_1.jpg": text: “Example”
+    - “img_2.jpg”, text: “Example2”
 ---
 
-## 🏆 Results  
+## Results  
 
-✨ Below are some results from detection + recognition on custom datasets.  
-
-📌 *Replace with actual images after training*  
+ Below are some results from detection + recognition on custom datasets.  
 
 ![Result 1](results/result1.png)  
 ![Result 2](results/result2.png)  
@@ -93,17 +92,17 @@ class_id x_center y_center width height
 
 ---
 
-## ✅ Conclusion  
+## Conclusion  
 
 This project successfully implements a **custom OCR training pipeline** with:  
-- 📌 Smart cropping and preprocessing  
-- 📌 Rotation-based label augmentation  
-- 📌 YOLOv9 detection + PaddleOCR recognition  
-- 📌 Fully open-source & reproducible (GPL-3.0)  
+- Smart cropping and preprocessing  
+- Rotation-based label augmentation  
+- YOLOv9 detection + PaddleOCR recognition  
+- Fully open-source & reproducible (GPL-3.0)  
 
 ---
 
-## 🔗 References  
+## References  
 - [YOLOv9 Official Repo](https://github.com/WongKinYiu/yolov9)  
 - [PaddleOCR Official Repo](https://github.com/PaddlePaddle/PaddleOCR)  
 
